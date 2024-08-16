@@ -41,7 +41,7 @@ struct CookItem {
     s32 effect_time{};
     s32 sell_price{};
     CookEffectId effect_id = CookEffectId::None;
-    /// Can refer to life bonus, stamina recover, or stamina bonus, depending on `effect_id`.
+    /// Refers to the effect potency of the dish.
     f32 vitality_boost{};
     bool is_crit{};
 };
